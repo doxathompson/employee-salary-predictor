@@ -5,7 +5,7 @@ A machine learning app built with **FastAPI** for model serving and **Streamlit*
 ## 🚀 Live App
 
 You can test the app here:  
-[**Live Salary Prediction App**](https://share.streamlit.io/your-username/employee-salary-predictor/main/streamlit_app.py)
+[**Live Salary Prediction App**](https://employee-salary-predictor-fqx6ks2dq5pwspmempzitx.streamlit.app/)
 
 ### Features:
 - Predict employee salary using a **Linear Regression** model.
