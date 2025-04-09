@@ -45,7 +45,7 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 
 
-📊 How the Model Works
+## 📊 How the Model Works
 The model predicts employee salaries based on the following features:
 
 Age: The age of the employee.
@@ -61,76 +61,73 @@ Years of Experience: Number of years the employee has worked.
 The model is trained using linear regression, which is a simple algorithm for predicting numeric values based on input features.
 
 
-🖥️ Running the App Locally
+## 🖥️ Running the App Locally
 1. Run the FastAPI backend (optional for testing API directly):
 
-From the project directory, run:
-uvicorn app.main:app --reload
+    From the project directory, run:
+    uvicorn app.main:app --reload
 
-This will start the API on http://127.0.0.1:8000.
+    This will start the API on http://127.0.0.1:8000.
 
 2. Run the Streamlit app:
-streamlit run streamlit_app.py
+    streamlit run streamlit_app.py
 
-This will launch the app at http://localhost:8501, where you can interact with the prediction model.
-
-
-🌐 Deploying the App
-The app is deployed online using Streamlit Cloud. Follow these steps to deploy the app on your own Streamlit Cloud:
-
-Create a Streamlit account and log in.
-
-Click on New App and link your GitHub repository.
-
-Select the branch (main) and the file streamlit_app.py.
-
-Streamlit will automatically install the required dependencies and deploy the app.
-
-You will get a live link to share your app with others!
+    This will launch the app at http://localhost:8501, where you can interact with the prediction model.
 
 
-⚙️ File Structure
-plaintext
-Copy
-Edit
-employee-salary-predictor/
-├── app/
-│   ├── main.py             # FastAPI backend code for serving predictions
-│   ├── model.pkl           # Trained Linear Regression model
-│   ├── scaler.pkl          # Scaler for normalizing numerical features
-│   └── features.pkl        # List of features used to train the model
-├── data/
-│   └── employee_data.csv   # Dataset used for training
-├── notebooks/
-│   └── 01_eda_and_modeling.ipynb  # Jupyter notebook with EDA and model training
-├── requirements.txt        # Project dependencies
-├── streamlit_app.py        # Streamlit frontend for salary prediction
-├── .gitignore              # Git ignore file
-└── README.md               # This README file
+## 🌐 Deploying the App
+    The app is deployed online using Streamlit Cloud. Follow these steps to deploy the app on your own Streamlit Cloud:
+
+    - Create a Streamlit account and log in.
+
+    - Click on New App and link your GitHub repository.
+
+    - Select the branch (main) and the file streamlit_app.py.
+
+    Streamlit will automatically install the required dependencies and deploy the app.
+
+    You will get a live link to share your app with others!
 
 
-🤖 Model Evaluation
-Model Type: Linear Regression
+## ⚙️ File Structure
+        employee-salary-predictor/
+        ├── app/
+        │   ├── main.py             # FastAPI backend code for serving predictions
+        │   ├── model.pkl           # Trained Linear Regression model
+        │   ├── scaler.pkl          # Scaler for normalizing numerical features
+        │   └── features.pkl        # List of features used to train the model
+        ├── data/
+        │   └── employee_data.csv   # Dataset used for training
+        ├── notebooks/
+        │   └── 01_eda_and_modeling.ipynb  # Jupyter notebook with EDA and model training
+        ├── requirements.txt        # Project dependencies
+        ├── streamlit_app.py        # Streamlit frontend for salary prediction
+        ├── .gitignore              # Git ignore file
+        └── README.md               # This README file
 
-Evaluation Metrics:
 
-R² Score: Measures the proportion of variance explained by the model.
+## 🤖 Model Evaluation
+    Model Type: Linear Regression
 
-RMSE (Root Mean Squared Error): Indicates the average error between predicted and actual salary.
+    Evaluation Metrics:
 
-MAE (Mean Absolute Error): Measures the average absolute difference between predicted and actual salary.
+    R² Score: Measures the proportion of variance explained by the model.
+
+    RMSE (Root Mean Squared Error): Indicates the average error between predicted and actual    salary.
+
+    MAE (Mean Absolute Error): Measures the average absolute difference between predicted and   actual salary.
 
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License – see the LICENSE file for details.
 
 
-🙏 Acknowledgements
+## 🙏 Acknowledgements
 The dataset used for training the model is a simulated dataset designed to showcase the basic prediction of employee salaries.
 
 Special thanks to the developers of Streamlit, FastAPI, Scikit-learn, and Pandas for their excellent libraries.
 
-👨‍💻 Contributing
+## 👨‍💻 Contributing
 Feel free to fork the project, create issues, and submit pull requests. Contributions are always welcome!
 
 
