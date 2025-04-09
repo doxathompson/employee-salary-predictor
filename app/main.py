@@ -7,9 +7,18 @@ import pandas as pd
 app = FastAPI()
 
 # Load artifacts
-model = joblib.load("app/model.pkl")
-scaler = joblib.load("app/scaler.pkl")
-features = joblib.load("app/features.pkl")
+import os
+
+# Absolute path (adjust to your repo structure)
+base_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(base_dir, "app", "model.pkl")
+scaler_path = os.path.join(base_dir, "app", "scaler.pkl")
+features_path = os.path.join(base_dir, "app", "features.pkl")
+
+model = joblib.load(model_path)
+scaler = joblib.load(scaler_path)
+features = joblib.load(features_path)
+
 
 # Define the input data model
 class EmployeeData(BaseModel):
