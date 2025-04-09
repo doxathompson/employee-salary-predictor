@@ -2,6 +2,11 @@
 
 A machine learning app built with **FastAPI** for model serving and **Streamlit** for an interactive user interface to predict employee salaries based on multiple input features like age, gender, job title, education level, and years of experience.
 
+## 🚀 Live App
+
+You can test the app here:  
+[**Live Salary Prediction App**](https://share.streamlit.io/your-username/employee-salary-predictor/main/streamlit_app.py)
+
 ### Features:
 - Predict employee salary using a **Linear Regression** model.
 - Built with **FastAPI** for serving the model and **Streamlit** for the frontend UI.
